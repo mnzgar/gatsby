@@ -12,14 +12,21 @@
 
 ## Actividades:
 
-Seguir el documento de la práctica de Gatsby probando las diferentes tareas que se proponen.
+Crear dos versiones accesibles de un componente similar a la que se creó para Web Components utilizando Gatsby. Los datos se obtendrán de un fichero json de eventos combinados con una api.
 
-Crear un sitio web con Gatsby que cumpla los siguientes requisitos:
+Desplegar el sitio en web-pages de github. 
 
-- Una página index, otra about. 
-- Se debe utilizar un componente con un Layout con encabezado que incluya la barra de navegación y una zona de contenido principal. 
-- En la página about se debe mostrar el autor, la fecha de creación y una imagen. 
-- Se debe crear un component edificio similar al que creaste con los Web Components pero con Gatsby.
+Plugins: 
+
+- gatsby-source-filesystem
+- gatsby-transformer-json
+- gatsby-source-apiserver
+- gatsby-plugin-eslint
+- eslint-plugin-jsx-a11y
+
+Nota: se necesita una API que exponga información con GRAPHQL, para completar la práctica se puede usar: 
+
+https://jsonplaceholder.typicode.com/posts
 
 ## 🚀 Preparar el entorno de desarrollo
 

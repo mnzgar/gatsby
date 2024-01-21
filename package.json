@@ -9,14 +9,24 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gh-pages -d public",
+    "lint": "eslint ."
   },
   "dependencies": {
+    "eslint-plugin-jsx-a11y": "^6.8.0",
     "gatsby": "^5.13.1",
+    "gatsby-plugin-eslint": "^4.0.4",
+    "gatsby-plugin-sass": "^6.13.0",
+    "gatsby-source-apiserver": "^2.1.8",
+    "gatsby-source-filesystem": "^5.13.0",
+    "gatsby-transformer-json": "^5.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

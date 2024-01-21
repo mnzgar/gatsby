@@ -6,5 +6,36 @@ module.exports = {
     title: `Gatsby`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-sass',
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `jsonData`,
+        path: `${__dirname}/src/data`,
+        enableDevRefresh: true,
+      }
+    },
+    'gatsby-transformer-json',
+    {
+      resolve: 'gatsby-source-apiserver',
+      options: {
+        url: 'https://demo7895686.mockable.io/api/listAssets',
+        method: 'get',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        name: 'apiData',
+        enableDevRefresh: true,
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        extensions: ['js', 'jsx', 'ts', 'tsx'],
+        exclude: ['node_modules', '.cache', 'public'],
+        stages: ['develop'],
+      },
+    },
+  ],
 }

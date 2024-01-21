@@ -1,0 +1,26 @@
+@import '_mixins';
+
+body {
+  margin: 0;
+  font-family: $font;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  @include top-bottom-style;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  @include top-bottom-style;
+}
