@@ -13,7 +13,6 @@ module.exports = {
       options: {
         name: `jsonData`,
         path: `${__dirname}/src/data`,
-        enableDevRefresh: true,
       }
     },
     'gatsby-transformer-json',
@@ -26,7 +25,7 @@ module.exports = {
           'Content-Type': 'application/json',
         },
         name: 'apiData',
-        enableDevRefresh: true,
+        entityLevel: false
       }
     },
     {
